@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/donwany/argocd-app-config.git
+    repoURL: https://github.com/donwany/ArgoCDExample.git
     targetRevision: HEAD
-    path: dev
+    path: argocd/dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: demo-app

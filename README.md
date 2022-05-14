@@ -11,6 +11,8 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 # login using cli
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 
+argocd login cd.argocdproj.io --username admin --password hCbtMLRcrb6soggh
+
 argocd login <ARGOCD_SERVER>
 argocd account update-password
 
