@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: worldbosskafka/flask:v2
+        image: gcr.io/google-samples/hello-app:1.0
         ports:
         - containerPort: 8080
